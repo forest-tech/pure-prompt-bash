@@ -1,4 +1,5 @@
 __pure_prompt_bash() {
+  local exit_status=$?
   local host_prefix=""
   local branch=""
 
@@ -12,6 +13,9 @@ __pure_prompt_bash() {
   fi
 
   PS1="${host_prefix}\w${branch}\n❯ "
+  return "$exit_status"
 }
 
-PROMPT_COMMAND="${PROMPT_COMMAND:+${PROMPT_COMMAND};}__pure_prompt_bash"
+if [[ ";${PROMPT_COMMAND:-};" != *";__pure_prompt_bash;"* ]]; then
+  PROMPT_COMMAND="${PROMPT_COMMAND:+${PROMPT_COMMAND};}__pure_prompt_bash"
+fi
