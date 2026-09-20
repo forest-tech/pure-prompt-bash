@@ -26,6 +26,22 @@ This prompt keeps the minimal look of Pure while adding a simple SSH-aware host 
    source ~/.bashrc
    ```
 
+## Appearance
+
+Local shell:
+
+```text
+~/projects/example-repo main*
+❯
+```
+
+SSH session:
+
+```text
+(remote-host) ~/projects/example-repo main* ⇣
+❯
+```
+
 ## Features
 
 * Pure-style two-line prompt
@@ -43,44 +59,6 @@ This prompt keeps the minimal look of Pure while adding a simple SSH-aware host 
   * magenta on success
   * red on failure
 * Uses ANSI colors directly
-
-## Appearance
-
-Local shell:
-
-```text
-~/projects/example-repo main*
-❯
-```
-
-SSH session:
-
-```text
-(remote-host) ~/projects/example-repo main* ⇣
-❯
-```
-
-Colors:
-
-```text
-(hostname)   bright black
-directory    blue
-git status   bright black
-❯ success    magenta
-❯ failure    red
-```
-
-The final prompt layout is:
-
-```text
-# SSH
-(hostname) directory git-status
-❯
-
-# Local
-directory git-status
-❯
-```
 
 ## Git status
 
