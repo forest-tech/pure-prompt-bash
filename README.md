@@ -29,14 +29,14 @@ This prompt keeps the minimal look of Pure while adding a simple SSH-aware host 
 Local shell:
 
 ```text
-~/projects/autoresearch master*
+~/projects/example-repo main*
 ❯
 ```
 
 SSH session:
 
 ```text
-(genkai0001) ~/projects/autoresearch master* ⇣
+(remote-host) ~/projects/example-repo main* ⇣
 ❯
 ```
 
@@ -87,25 +87,25 @@ directory git-status
 The prompt compares the current branch with its configured upstream branch.
 
 ```text
-master
+main
 ```
 
 The local branch is up to date.
 
 ```text
-master ⇣
+main ⇣
 ```
 
 The local branch is behind its upstream branch.
 
 ```text
-master ⇡
+main ⇡
 ```
 
 The local branch is ahead of its upstream branch.
 
 ```text
-master ⇣⇡
+main ⇣⇡
 ```
 
 The local and upstream branches have diverged.
@@ -113,13 +113,13 @@ The local and upstream branches have diverged.
 A dirty working tree is indicated with `*`:
 
 ```text
-master*
+main*
 ```
 
 For example:
 
 ```text
-master* ⇣
+main* ⇣
 ```
 
 means that the working tree contains local changes and the local branch is behind its upstream branch.
@@ -131,14 +131,14 @@ Note that the prompt does not automatically run `git fetch`, so the upstream sta
 When running inside an SSH session, the hostname is added before the current directory:
 
 ```text
-(genkai0001) ~/projects/autoresearch master
+(remote-host) ~/projects/example-repo main
 ❯
 ```
 
 When running locally, the hostname is omitted:
 
 ```text
-~/projects/autoresearch master
+~/projects/example-repo main
 ❯
 ```
 
