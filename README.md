@@ -6,6 +6,26 @@ Inspired by [Pure](https://github.com/sindresorhus/pure) and [pure-bash](https:/
 
 This prompt keeps the minimal look of Pure while adding a simple SSH-aware host indicator for Bash environments.
 
+## Usage
+
+1. Place the prompt script here:
+
+   ```bash
+   ~/.config/bash/pure.bash
+   ```
+
+2. Source it from `~/.bashrc`:
+
+   ```bash
+   source ~/.config/bash/pure.bash
+   ```
+
+3. Reload your shell:
+
+   ```bash
+   source ~/.bashrc
+   ```
+
 ## Features
 
 * Pure-style two-line prompt
@@ -61,26 +81,6 @@ The final prompt layout is:
 directory git-status
 ❯
 ```
-
-## Usage
-
-1. Place the prompt script here:
-
-   ```bash
-   ~/.config/bash/pure.bash
-   ```
-
-2. Source it from `~/.bashrc`:
-
-   ```bash
-   source ~/.config/bash/pure.bash
-   ```
-
-3. Reload your shell:
-
-   ```bash
-   source ~/.bashrc
-   ```
 
 ## Git status
 
