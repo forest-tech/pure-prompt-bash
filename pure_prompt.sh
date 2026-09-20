@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Pure-style prompt for Bash.
-# Usage: source /path/to/pure_prompt.sh
+# Usage: source ~/.config/bash/pure.bash
 
 _pure_prompt_command() {
   local exit_code=$?
