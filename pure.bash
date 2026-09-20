@@ -121,7 +121,7 @@ __pure_prompt_command() {
     ssh_info=$(__pure_ssh_info)
     git_info=$(__pure_git_info)
 
-    PS1="${ssh_info}${PURE_ANSI_BLUE}\w${PURE_ANSI_RESET}${git_info}
+    PS1="\n${ssh_info}${PURE_ANSI_BLUE}\w${PURE_ANSI_RESET}${git_info}
 ${prompt_color}${PURE_PROMPT_SYMBOL}${PURE_ANSI_RESET} "
 }
 
